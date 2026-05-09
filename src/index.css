@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+Ethiopic:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-ethiopic: "Noto Sans Ethiopic", sans-serif;
+
+  --color-ethiopia-green: #078930;
+  --color-ethiopia-yellow: #FCDE05;
+  --color-ethiopia-red: #DA121A;
+  --color-teff-brown: #4A3728;
+  --color-cotton-white: #FDFBF7;
+}
+
+@layer base {
+  body {
+    @apply bg-cotton-white text-teff-brown font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.amharic {
+  @apply font-ethiopic;
+}
